@@ -19,4 +19,13 @@ public class ChatFragment extends Fragment {
 
         return v;
     }
+
+
+    public static ChatFragment newInstance() {
+
+        ChatFragment frag = new ChatFragment();
+
+        return frag;
+    }
+
 }

@@ -18,8 +18,14 @@ public class YoutubeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_youtube, container, false);
 
 
-
-    return v;
+        return v;
     }
 
+
+    public static YoutubeFragment newInstance() {
+
+        YoutubeFragment frag = new YoutubeFragment();
+
+        return frag;
+    }
 }

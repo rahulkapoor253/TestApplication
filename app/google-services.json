@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "349657039536",
+    "firebase_url": "https://booming-oarlock-211913.firebaseio.com",
+    "project_id": "booming-oarlock-211913",
+    "storage_bucket": "booming-oarlock-211913.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:349657039536:android:f7f92ffaeba5618b",
+        "android_client_info": {
+          "package_name": "com.example.rahulkapoor.testapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "349657039536-pkc50humcgv5skggg5ld305vrq6dru69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rahulkapoor.testapplication",
+            "certificate_hash": "41cd71c4ead4bff217d13e9016d425098214862d"
+          }
+        },
+        {
+          "client_id": "349657039536-5eb36i8e5l8tnjcb1uj76j6v0ltskrr1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB18gKzKy9pFcV3CjQRci2NjSxckxj_quI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "349657039536-5eb36i8e5l8tnjcb1uj76j6v0ltskrr1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
