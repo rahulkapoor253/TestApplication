@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Test Application</string>
+
+    <string name="facebook_app_id">294819494605053</string>
+    <string name="fb_login_protocol_scheme">fb294819494605053</string>
+
+    <string name="fb_login_failed">facebook login failed</string>
 </resources>
