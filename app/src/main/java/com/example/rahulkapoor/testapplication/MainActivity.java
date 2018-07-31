@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         //facebook sdk init;
         callbackManager = CallbackManager.Factory.create();
         facebookManager = new FacebookManager(MainActivity.this);
-        facebookSdk.sdkInitialize(this.getApplicationContext());
+        FacebookSdk.sdkInitialize(this.getApplicationContext());
 
         btnFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSuccess(final SocialData fbData) {
 
+                Log.i("onSuccess", "Successful hit");
+                Log.i("fbid", fbData.getID());
+                Log.i("accesstoken", String.valueOf(AccessToken.getCurrentAccessToken().getToken()));
                 Log.i("fb_data", fbData.getID() + " " + fbData.getEmail() + " " + fbData.getFirstName() + " " + fbData.getPicture());
                 facebookID = fbData.getID();
                 facebookToken = AccessToken.getCurrentAccessToken().getToken();
@@ -115,6 +118,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    protected void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //for facebook;
+        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
     /**

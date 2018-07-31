@@ -22,7 +22,7 @@ public class FacebookManager {
 
     private static final String TAG = FacebookManager.class.getSimpleName();
 
-    private static final Collection<String> PERMISSIONS_LIST = Arrays.asList("public_profile", "user_friends", "email");
+    private static final Collection<String> PERMISSIONS_LIST = Arrays.asList("public_profile", "email");
 
     //fields
     private static final String FIELDS = "fields";
@@ -79,7 +79,6 @@ public class FacebookManager {
                                             object.getString(FIRST_NAME),
                                             object.getString(LAST_NAME),
                                             email,
-                                            object.getString(GENDER),
                                             getUserProfileImageUrl(object.getString(ID)));
                                     facebookResponseHandler.onSuccess(mSocialUserDetails);
                                 } catch (Exception e) {

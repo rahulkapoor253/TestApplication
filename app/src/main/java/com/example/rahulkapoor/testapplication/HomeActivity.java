@@ -25,6 +25,7 @@ public class HomeActivity extends FragmentActivity {
             @Override
             public void onClick(final View v) {
                 SharedPref.getInstance(getApplicationContext()).save_token(null, getApplicationContext());
+                finish();
             }
         });
 

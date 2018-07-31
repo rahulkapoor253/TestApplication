@@ -4,17 +4,16 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class SocialData implements Parcelable {
-    private String id, firstName, lastName, email, gender, picture;
+    private String id, firstName, lastName, email, picture;
 
     public SocialData(final String id, final String firstName,
-                      final String lastName, final String email,
-                      final String gender, final String picture) {
+                      final String lastName, final String email, final String picture) {
 
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
-        this.gender = gender;
+
         this.picture = picture;
     }
 
@@ -23,7 +22,7 @@ public class SocialData implements Parcelable {
         firstName = in.readString();
         lastName = in.readString();
         email = in.readString();
-        gender = in.readString();
+
         picture = in.readString();
     }
 
@@ -55,9 +54,6 @@ public class SocialData implements Parcelable {
         return email;
     }
 
-    public String getGender() {
-        return gender;
-    }
 
     public String getPicture() {
         return picture;
@@ -75,7 +71,6 @@ public class SocialData implements Parcelable {
         dest.writeString(firstName);
         dest.writeString(lastName);
         dest.writeString(email);
-        dest.writeString(gender);
         dest.writeString(picture);
     }
 }
